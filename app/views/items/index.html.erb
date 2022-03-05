@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Title:</th>
+    <th>Description:</th>
+    <th>Price:</th>
+  </tr>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.title %></td>
+      <td><%= item.description %></td>
+      <td><%= item.price %></td>
+    </tr>
+  <% end %>
+</table>
