@@ -9,4 +9,4 @@
     Item.create(title: "My #{index + 1} item", description: "Better than #{index} item", price: index * 100)
   end
 
-  
+  AdminUser.first_or_create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
